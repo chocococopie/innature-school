@@ -360,4 +360,8 @@
   .bottom-text {
     max-width: 90vw;
   }
+
+  .torn-edge {
+    bottom: -18px;
+  }
 }
