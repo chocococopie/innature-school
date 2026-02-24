@@ -8,8 +8,8 @@ const HeroImage: React.FC = () => {
       <Image
         src="/soil.png"
         alt="Soil"
-        width={1920}
-        height={300}
+        width={1000}
+        height={100}
         priority
         className="hero-img"
       />
