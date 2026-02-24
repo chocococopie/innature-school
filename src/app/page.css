@@ -5,6 +5,7 @@
 .infographic-container {
   width: 100%;
   overflow-x: hidden;
+  padding-top: 70px;  /* same as header height */
 }
 
 /* ============================= */
@@ -12,13 +13,23 @@
 /* ============================= */
 
 .header {
+  position: fixed;       /* stick to top of viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 70px;
-  background: #e9e9e9;
+  z-index: 1000;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
-  position: relative;
+
+  background: rgba(255, 255, 255, 0.95);  /* slightly translucent */
+  backdrop-filter: blur(10px);           /* modern glassy effect */
+  -webkit-backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* subtle separation */
 }
 
 /* Left */
@@ -97,7 +108,7 @@
 /* ============================= */
 
 .text-block {
-  background: #f4f4f4;
+  background: white;
   padding: 32px;
   max-width: 460px;
   position: relative;
@@ -105,8 +116,15 @@
   overflow: hidden;
 }
 
+.text-block.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 /* soft torn bottom illusion */
-.text-block::after {
+.text-block.torn::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -141,7 +159,7 @@
 
 .bumblebee-image {
   position: absolute;
-  right: 100px;
+  right: 10%;
   top: 90px;
   font-size: 90px;
   transform: rotate(-10deg);
@@ -213,12 +231,13 @@
 /* ============================= */
 
 .bottom-section {
-  background: #ededed;
+  background: white;
   padding: 100px 80px;
   display: flex;
   align-items: flex-start;
   gap: 80px;
   position: relative;
+  justify-content: space-between;
 }
 
 /* Bottom text styling */
@@ -247,6 +266,7 @@
 
 .people-photo {
   position: relative;
+  margin-left: auto;
 }
 
 .people-photo img {
