@@ -69,9 +69,14 @@
 
 .hero-image {
   width: 100%;
-  height: 380px;
-  overflow: hidden;
-  position: relative;
+  line-height: 0; /* removes inline image gap */
+  background: linear-gradient(
+    to bottom,
+    #0f6b3c 0%,
+    #0f6b3c 50%,
+    white 50%,
+    white 100%
+  );
 }
 
 .hero-image::after {
@@ -85,10 +90,9 @@
   background-size: cover;
 }
 
-.hero-image img {
+.hero-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
@@ -98,7 +102,7 @@
 
 .main-content {
   background: #0f6b3c;
-  padding: 100px 80px 140px 80px;
+  padding: 100px 80px 0px 80px;
   position: relative;
   color: #111;
 }
@@ -112,7 +116,7 @@
   background: white;
   border-radius: 2px;
   padding: 32px;
-  max-width: 460px;
+  max-width: 50vw;
   position: relative;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
   overflow: visible;
@@ -122,11 +126,10 @@
   text-align: center;
 }
 
-
 .torn-edge {
   position: absolute;
   left: 0;
-   bottom: -15px;
+  bottom: -23px;
   width: 100%;
   height: auto;
   display: block;
@@ -135,14 +138,14 @@
 
 .text-block h2 {
   margin: 0 0 16px 0;
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .text-block p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.7;
 }
 
@@ -157,10 +160,10 @@
 
 .bumblebee-image {
   position: absolute;
-  right: 10%;
-  top: 90px;
+  right: 0;
+  top: -120px;
   font-size: 90px;
-  transform: rotate(-10deg);
+  transform: rotate(-20deg);
 }
 
 /* ============================= */
@@ -230,7 +233,7 @@
 
 .bottom-section {
   background: white;
-  padding: 100px 80px;
+  padding: 0 100px 80px;
   display: flex;
   align-items: flex-start;
   gap: 80px;
@@ -243,18 +246,18 @@
   background: transparent;
   box-shadow: none;
   padding: 0;
-  max-width: 450px;
+  max-width: 40vw;
 }
 
 .bottom-text h2 {
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
 
 .bottom-text p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.7;
 }
 
@@ -268,13 +271,13 @@
 }
 
 .people-photo img {
-  width: 280px;
+  width: 40vw;
   display: block;
-  transform: rotate(-4deg);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  /* transform: rotate(-4deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25); */
 }
 
-/* decorative tape */
+/* decorative tape
 .people-photo::before,
 .people-photo::after {
   content: "";
@@ -294,7 +297,7 @@
 .people-photo::after {
   right: 30px;
   transform: rotate(12deg);
-}
+} */
 
 /* ============================= */
 /* RESPONSIVE */

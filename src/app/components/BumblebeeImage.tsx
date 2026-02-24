@@ -8,8 +8,8 @@ const BumblebeeImage: React.FC = () => {
       <Image
         src="/lavender.png"
         alt="Bumblebee"
-        width={120}
-        height={120}
+        width={500}
+        height={700}
         priority
       />
     </div>
@@ -17,3 +17,5 @@ const BumblebeeImage: React.FC = () => {
 };
 
 export default BumblebeeImage;
+
+

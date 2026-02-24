@@ -1,8 +1,0 @@
-<svg viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M0,40 
-           C100,70 200,10 300,40 
-           C400,70 500,10 600,40 
-           C700,70 800,10 900,40 
-           C1000,70 1100,10 1200,40 
-           L1200,80 L0,80 Z" fill="white"/>
-</svg>

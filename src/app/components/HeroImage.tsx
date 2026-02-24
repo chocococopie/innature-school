@@ -1,11 +1,17 @@
-import React from 'react';
+"use client";
+import Image from "next/image";
+import React from "react";
 
 const HeroImage: React.FC = () => {
   return (
     <section className="hero-image">
-      <img 
-        src="/hero-bee.jpg" 
-        alt="Wild flowers and bees" 
+      <Image
+        src="/hero-bee.png"
+        alt="Wild flowers and bees"
+        width={1920}
+        height={300}
+        priority
+        className="hero-img"
       />
     </section>
   );

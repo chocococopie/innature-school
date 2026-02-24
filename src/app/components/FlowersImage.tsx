@@ -6,8 +6,8 @@ const BumblebeeImage: React.FC = () => {
   return (
     <div className="bumblebee-image">
       <Image
-        src="/flowers.png"
-        alt="Flowers"
+        src="/lavender.png"
+        alt="Bumblebee"
         width={120}
         height={120}
         priority
