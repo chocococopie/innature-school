@@ -1,0 +1,326 @@
+/* ============================= */
+/* PAGE CONTAINER */
+/* ============================= */
+
+.infographic-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.header {
+  height: 70px;
+  background: #e9e9e9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: relative;
+}
+
+/* Left */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Center Title */
+.header-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Right Hamburger */
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.header-menu span {
+  width: 20px;
+  height: 2px;
+  background: #222;
+  display: block;
+}
+
+/* ============================= */
+/* HERO IMAGE */
+/* ============================= */
+
+.hero-image {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: url('/torn-edge.svg') no-repeat bottom;
+  background-size: cover;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ============================= */
+/* MAIN GREEN INFOGRAPHIC AREA */
+/* ============================= */
+
+.main-content {
+  background: #0f6b3c;
+  padding: 100px 80px 140px 80px;
+  position: relative;
+  color: #111;
+}
+
+/* ============================= */
+/* PAPER CARD STYLE */
+/* ============================= */
+
+.text-block {
+  background: #f4f4f4;
+  padding: 32px;
+  max-width: 460px;
+  position: relative;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* soft torn bottom illusion */
+.text-block::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: url('/torn-edge.svg') no-repeat bottom;
+  background-size: cover;
+}
+
+.text-block h2 {
+  margin: 0 0 16px 0;
+  font-size: 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.text-block p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Top text spacing */
+.top-block {
+  margin-bottom: 100px;
+}
+
+/* ============================= */
+/* FLOATING BEE */
+/* ============================= */
+
+.bumblebee-image {
+  position: absolute;
+  right: 100px;
+  top: 90px;
+  font-size: 90px;
+  transform: rotate(-10deg);
+}
+
+/* ============================= */
+/* FLOWERS + DANGER SECTION */
+/* ============================= */
+
+.flowers-section {
+  display: flex;
+  align-items: flex-end;
+  gap: 60px;
+  margin-top: 120px;
+  position: relative;
+}
+
+/* Decorative flowers */
+.flower {
+  font-size: 70px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.flower.yellow {
+  font-size: 90px;
+}
+
+.flower.red {
+  font-size: 70px;
+}
+
+.flower.purple {
+  font-size: 60px;
+}
+
+/* Danger text aligned right */
+.danger-block {
+  margin-left: auto;
+}
+
+/* ============================= */
+/* SOIL DIVIDER */
+/* ============================= */
+
+.soil {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(
+    to bottom,
+    #4b2e1b,
+    #3b2414
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 10%;
+}
+
+.soil-line {
+  height: 2px;
+  background: rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+/* ============================= */
+/* BOTTOM SECTION */
+/* ============================= */
+
+.bottom-section {
+  background: #ededed;
+  padding: 100px 80px;
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  position: relative;
+}
+
+/* Bottom text styling */
+.bottom-text {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  max-width: 450px;
+}
+
+.bottom-text h2 {
+  font-size: 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.bottom-text p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ============================= */
+/* PHOTO WITH TAPE EFFECT */
+/* ============================= */
+
+.people-photo {
+  position: relative;
+}
+
+.people-photo img {
+  width: 280px;
+  display: block;
+  transform: rotate(-4deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* decorative tape */
+.people-photo::before,
+.people-photo::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 22px;
+  background: #9bd0b0;
+  top: -12px;
+  opacity: 0.9;
+}
+
+.people-photo::before {
+  left: 30px;
+  transform: rotate(-18deg);
+}
+
+.people-photo::after {
+  right: 30px;
+  transform: rotate(12deg);
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 1024px) {
+  .main-content,
+  .bottom-section {
+    padding: 80px 40px;
+  }
+
+  .flowers-section {
+    flex-wrap: wrap;
+  }
+
+  .danger-block {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+  }
+
+  .people-photo img {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    height: 280px;
+  }
+
+  .bumblebee-image {
+    display: none;
+  }
+
+  .main-content {
+    padding: 60px 24px 100px 24px;
+  }
+
+  .bottom-section {
+    padding: 60px 24px;
+  }
+}
