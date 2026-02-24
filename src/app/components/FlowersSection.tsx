@@ -5,9 +5,6 @@ import Image from 'next/image';
 const FlowersSection: React.FC = () => {
   return (
     <div className="flowers-section">
-      {/* <div className="flower yellow">🌼</div>
-      <div className="flower red">🌹</div>
-      <div className="flower purple">🌸</div> */}
       <Image
         src="/flowers.png"
         alt="Flowers"

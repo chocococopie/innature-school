@@ -7,18 +7,11 @@ const Header: React.FC = () => {
     <header className="header">
       {/* Left Bee Icon */}
       <div className="header-left">
-        <Image
-          src="/bee-icon.png"
-          alt="Bee icon"
-          width={28}
-          height={28}
-        />
+        <Image src="/bee-icon.png" alt="Bee icon" width={70} height={50} />
       </div>
 
       {/* Center Title */}
-      <div className="header-title">
-        InNature
-      </div>
+      <div className="header-title">InNature</div>
 
       {/* Right Hamburger */}
       <div className="header-menu">
