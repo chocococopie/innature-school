@@ -6,10 +6,10 @@ import FlowersSection from './FlowersSection';
 const MainContent: React.FC = () => {
   return (
     <main className="main-content">
-      <TextBlock 
+      <TextBlock
         className="top-block"
-        title="Warum bienen wichtig sind"
-        text="War bienen wichtig?"
+        title="Warum Bienen wichtig sind"
+        text="Warum sind Bienen wichtig?"
       />
       <BumblebeeImage />
       <FlowersSection />
