@@ -364,4 +364,13 @@
   .torn-edge {
     bottom: -18px;
   }
+
+  .flowers-section {
+  display: flex;
+  align-items: flex-end;
+  gap: 60px;
+  margin-top: 120px;
+  position: relative;
+  margin-left: 0;
+}
 }
