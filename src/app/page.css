@@ -352,4 +352,8 @@
   .bottom-section {
     padding: 60px 24px;
   }
+
+  .bottom-text {
+    max-width: 90vw;
+  }
 }
