@@ -143,14 +143,15 @@
 .text-block h2 {
   margin: 0 0 16px 0;
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.08em;
+  font-family: var(--font-heading);
 }
 
 .text-block p {
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 /* Top text spacing */
@@ -255,14 +256,16 @@
 
 .bottom-text h2 {
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: var(--font-heading);
   margin-bottom: 16px;
 }
 
 .bottom-text p {
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 /* ============================= */
