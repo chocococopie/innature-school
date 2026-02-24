@@ -5,7 +5,8 @@ interface TextBlockProps {
   title?: string;
   text?: string;
   children?: React.ReactNode;
-  torn?: boolean; // NEW
+  torn?: boolean;
+  centered?: boolean;
 }
 
 const TextBlock: React.FC<TextBlockProps> = ({
@@ -13,13 +14,18 @@ const TextBlock: React.FC<TextBlockProps> = ({
   title,
   text,
   children,
-  torn = false, // default false
+  torn = false,
+  centered = false,
 }) => {
   return (
-    <div className={`text-block ${torn ? "torn" : ""} ${className}`}>
+    <div className={`text-block ${centered ? "centered" : ""} ${className}`}>
       {title && <h2>{title}</h2>}
       {text && <p>{text}</p>}
       {children}
+
+      {torn && (
+        <img src="/torn.png" alt="" className="torn-edge" aria-hidden="true" />
+      )}
     </div>
   );
 };
