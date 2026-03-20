@@ -6,6 +6,9 @@ import HeroImage from "./components/HeroImage";
 import MainContent from "./components/MainContent";
 import BottomSection from "./components/BottomSection";
 import SoilSection from "./components/SoilSection";
+import ApplicationForm from "./components/ApplicationForm";
+import SchoolsSlider from "./components/SchoolsSlider";
+import SchoolsMap from "./components/SchoolsMap";
 import "./page.css";
 
 export default function BeeInfographicPage() {
@@ -16,6 +19,9 @@ export default function BeeInfographicPage() {
       <MainContent />
       <SoilSection />
       <BottomSection />
+      <ApplicationForm />
+      <SchoolsSlider />
+      <SchoolsMap />
       <Footer />
     </div>
   );
