@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import dynamic from "next/dynamic";
 import Header from "./components/Header";
@@ -8,14 +9,16 @@ import MainContent from "./components/MainContent";
 import BottomSection from "./components/BottomSection";
 import SoilSection from "./components/SoilSection";
 import ApplicationForm from "./components/ApplicationForm";
-import SchoolsSlider from "./components/SchoolsSlider";
+import "./page.css";
 
-// Dynamically import SchoolsMap to disable SSR
-const SchoolsMap = dynamic(() => import("./components/SchoolsMap"), {
+// 🔥 BOTH must be dynamic
+const SchoolsSlider = dynamic(() => import("./components/SchoolsSlider"), {
   ssr: false,
 });
 
-import "./page.css";
+const SchoolsMap = dynamic(() => import("./components/SchoolsMap"), {
+  ssr: false,
+});
 
 export default function BeeInfographicPage() {
   return (
@@ -25,9 +28,9 @@ export default function BeeInfographicPage() {
       <MainContent />
       <SoilSection />
       <BottomSection />
-      {/*       <ApplicationForm /> */}
-      {/* <SchoolsSlider /> */}
-      {/* <SchoolsMap /> */}
+      <ApplicationForm />
+      <SchoolsSlider />
+      <SchoolsMap />
       <Footer />
     </div>
   );
