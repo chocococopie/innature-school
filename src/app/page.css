@@ -490,3 +490,193 @@
   object-fit: contain;
   margin-bottom: 10px;
 }
+
+
+
+
+
+/* Habitat Section Styles */
+.habitat-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f4f8 100%);
+}
+
+.habitat-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.habitat-title {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #48bb78, #38a169);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.habitat-subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #4a5568;
+  margin-bottom: 4rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.habitat-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.habitat-step-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #48bb78;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.habitat-step-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #48bb78, #38a169);
+}
+
+.habitat-step-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.15);
+}
+
+.habitat-step-number {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #48bb78, #38a169);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(72, 187, 120, 0.4);
+}
+
+.habitat-step-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+
+.habitat-step-description {
+  color: #4a5568;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.habitat-tips {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+}
+
+.habitat-tips-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #2d3748;
+}
+
+.habitat-tips-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.habitat-tips-list li {
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  color: #4a5568;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.habitat-tips-list li::before {
+  content: "🐝";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .habitat-section {
+    padding: 60px 16px;
+  }
+  
+  .habitat-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .habitat-step-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+
+
+
+
+/* Hero Video Styles */
+.hero-video {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-torn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-image: url('/torn.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .hero-video {
+    height: 50vh;
+  }
+}
