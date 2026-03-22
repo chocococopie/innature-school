@@ -25,9 +25,9 @@ export default function BeeInfographicPage() {
       <MainContent />
       <SoilSection />
       <BottomSection />
-      <ApplicationForm />
-      <SchoolsSlider />
-      <SchoolsMap />
+      {/*       <ApplicationForm /> */}
+      {/* <SchoolsSlider /> */}
+      {/* <SchoolsMap /> */}
       <Footer />
     </div>
   );
