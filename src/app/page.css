@@ -273,17 +273,29 @@
 /* PHOTO WITH TAPE EFFECT */
 /* ============================= */
 
+/* Kill ALL grey backgrounds */
 .people-photo {
   position: relative;
   margin-left: auto;
+  overflow: hidden; /* Prevents image clipping during rotation */
 }
 
 .people-photo img {
   width: 40vw;
   display: block;
-  /* transform: rotate(-4deg);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25); */
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform; /* Performance optimization */
 }
+
+/* Tilt + shadow on hover */
+.people-photo:hover img {
+  transform: rotate(-4deg) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+
 
 
 .footer {
